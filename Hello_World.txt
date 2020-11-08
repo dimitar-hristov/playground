@@ -1,4 +1,4 @@
-Hello. First line.
+Hello. First line. Changing the content of the file
 Hey again. Second line
 Third line
 Fouth line
