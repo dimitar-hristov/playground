@@ -11,3 +11,4 @@ Bar2
 Bar3
 Bar4
 Bar5
+Bar6
