@@ -8,3 +8,4 @@ Seventh line
 Eighth line Adding some text on the last line of the file
 Bar
 Bar2
+Bar3
