@@ -1,6 +1,6 @@
 Hello. First line. Changing the content of the file
 Hey again. Second line
-Third line with some text
+Third line with some text and more and more
 Fouth line
 Fifth line
 Sixth line
