@@ -7,6 +7,6 @@ jobs:
   sayHello:
     runs-on: ubuntu-latest
     steps:
-      - uses: dimitar-hristov/foo-probot@v1.3
+      - uses: dimitar-hristov/foo-probot@v1.4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
