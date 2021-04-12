@@ -9,6 +9,6 @@ jobs:
     steps:
       - run: pwd
       - run: ls -al
-      - uses: dimitar-hristov/bar-probot@v1
+      - uses: dimitar-hristov/foo-probot@v1.4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
