@@ -1,0 +1,49 @@
+Three ways to execure GH actions
+	- Docker container actions
+	- JavaScript actions
+	- Composite actions
+	
+Using dockerfile
+	- Use the probot adapter again
+	- Use a bash script as the entrypoint to the application
+	- Change the start script to do `node ./index.js`
+	- Change the explicitly set cwd to /
+	- Make the script executable
+	
+Using JavaScript actions
+	1. Use the '@probot/adapter-github-actions' dependency.
+	2. Rename the current index.js to be app.js
+	3. Create a new index.js to contain: https://github.com/probot/adapter-github-actions#usage
+	4. Use ncc
+
+Using Composite actions
+	1. Use a bash script and the GITHUB_ACTION_PATH env variable to navigate the container
+	2. We can run `npm install`
+	3. We can run `node index.js`
+	4. We again use the adapter from above.
+	5. The bash script must be executable (x permisionss).
+	
+User side:
+	1. Need a file like https://github.com/dimitar-hristov/playground/blob/main/.github/workflows/main.yml
+	2. Need to bump the version evey time a new version of the action is released
+
+(!) Testing on a dummy repo will require making the action repo public
+(?) Do we need to release it in the GH Market
+
+Docs:
+- Creating a Docker container action
+	- https://docs.github.com/en/actions/creating-actions/creating-a-docker-container-action
+- Dockerfile support for GitHub Actions
+	- https://docs.github.com/en/actions/creating-actions/dockerfile-support-for-github-actions
+- Creating a JavaScript action
+	- https://docs.github.com/en/actions/creating-actions/creating-a-javascript-action
+- Metadata syntax for GitHub Actions
+	- https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#runs-for-docker-actions
+- probot/adapter-github-actions
+	- https://github.com/probot/adapter-github-actions
+- probot/example-github-action
+	-https://github.com/probot/example-github-action
+- Authentication in a workflow
+	- https://docs.github.com/en/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
+- vercel/ncc
+	- https://github.com/vercel/ncc
