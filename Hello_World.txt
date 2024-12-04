@@ -1,8 +1,8 @@
-Hello. First line. Changing the content of the file
+Hello. First line. Changing the content of the file foo
 Hey again. Second line
 Third line with some text and more and more
 Fouth line
-Fifth line
+Fifth line bar
 Sixth line
 Seventh line
 Eighth line Adding some text on the last line of the file
